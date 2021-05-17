@@ -8,11 +8,11 @@ return new class extends DefaultDeployer
     {
         return $this->getConfigBuilder()
             // SSH connection string to connect to the remote server (format: user@host-or-IP:port-number)
-            ->server('user@hostname')
+            ->server('aroundp2@mocha3035')
             // the absolute path of the remote server directory where the project is deployed
-            ->deployDir('/var/www/vhosts/symfony-demo')
+            ->deployDir('/home/aroundph/public_html')
             // the URL of the Git repository where the project code is hosted
-            ->repositoryUrl('https://github.com/symfony/symfony-demo')
+            ->repositoryUrl('git@github.com:dia-ousmane19/demoDeploy.git')
             // the repository branch to deploy
             ->repositoryBranch('master')
         ;
